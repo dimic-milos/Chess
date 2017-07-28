@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="chess20" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJ7-Ir-uTK">
+                                <rect key="frame" x="0.0" y="628" width="114" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Bq7-LB-FTM"/>
+                                    <constraint firstAttribute="width" constant="114" id="mke-iI-ruv"/>
+                                </constraints>
+                                <state key="normal" title="Print result"/>
+                                <connections>
+                                    <action selector="Test:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ovx-mg-yV0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cx label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ojk-BC-Uj9">
+                                <rect key="frame" x="6" y="459" width="363" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ELK-Df-ew2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best move" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeQ-gJ-LPB">
+                                <rect key="frame" x="6" y="504" width="363" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ghR-Rs-Ams">
+                                <rect key="frame" x="310" y="599" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate best move ON/OFF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jT-g8-hRq">
+                                <rect key="frame" x="16" y="604" width="222" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="3MH-sH-LZE"/>
+                                    <constraint firstAttribute="height" constant="21" id="oUv-Ze-pbx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Worst move" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9N-91-qGJ">
+                                <rect key="frame" x="6" y="551" width="363" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="L9N-91-qGJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-10" id="3in-Dh-z94"/>
+                            <constraint firstItem="VeQ-gJ-LPB" firstAttribute="top" secondItem="Ojk-BC-Uj9" secondAttribute="bottom" constant="5" id="6bF-nW-hrB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hJ7-Ir-uTK" secondAttribute="bottom" constant="9" id="Jp4-cZ-Adr"/>
+                            <constraint firstItem="VeQ-gJ-LPB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-10" id="QY1-XR-0EI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VeQ-gJ-LPB" secondAttribute="bottom" constant="123" id="YEn-ww-Wmt"/>
+                            <constraint firstItem="Ojk-BC-Uj9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-10" id="Yag-n9-LCC"/>
+                            <constraint firstItem="L9N-91-qGJ" firstAttribute="top" secondItem="VeQ-gJ-LPB" secondAttribute="bottom" constant="7" id="Yff-LP-mBS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ojk-BC-Uj9" secondAttribute="bottom" constant="168" id="ZO3-1b-i4G"/>
+                            <constraint firstItem="hJ7-Ir-uTK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="ZYY-V4-E94"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6jT-g8-hRq" secondAttribute="bottom" constant="42" id="grf-eC-ms0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ghR-Rs-Ams" secondAttribute="bottom" constant="37" id="kJN-hw-evP"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="6jT-g8-hRq" secondAttribute="leading" id="m9R-mX-wPZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ghR-Rs-Ams" secondAttribute="trailing" id="oB9-ln-w7i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L9N-91-qGJ" secondAttribute="trailing" constant="-10" id="pLm-Q3-TLm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VeQ-gJ-LPB" secondAttribute="trailing" constant="-10" id="uEg-Ly-DjI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ojk-BC-Uj9" secondAttribute="trailing" constant="-10" id="uOu-Q9-QpG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="L9N-91-qGJ" secondAttribute="bottom" constant="75" id="w8y-34-IAJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bestCBLabel" destination="VeQ-gJ-LPB" id="HoI-k0-JCQ"/>
+                        <outlet property="cxLabel" destination="Ojk-BC-Uj9" id="v4g-ce-BP1"/>
+                        <outlet property="swAI" destination="ghR-Rs-Ams" id="9qb-Zs-361"/>
+                        <outlet property="worstCBlabel" destination="L9N-91-qGJ" id="RC1-PN-r88"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="116.49175412293854"/>
+        </scene>
+    </scenes>
+</document>
