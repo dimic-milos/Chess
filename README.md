@@ -4,18 +4,23 @@ Chess game with all special chess moves implemented (promotion, en passant, cast
 # CHECK SITUATIONS
 
 Demonstrates ability to recognize if King is check. Paints corresponding fields in purple color:
+
 <a href="https://imgflip.com/gif/1teuh9"><img src="https://i.imgflip.com/1teuh9.gif" title="made at imgflip.com"/></a>
 
 Demonstrates ability to recognize if King is about to step into a field under enemy attack and prevents that move no matter if it removes immediate  treath to king, it puts the King in new check by another opponent piece:
+
 <a href="https://imgflip.com/gif/1tg39w"><img src="https://i.imgflip.com/1tg39w.gif" title="made at imgflip.com"/></a>
 
 Demonstrates ability to defend the King by eating the chess piece who's attacking the King:
+
 <a href="https://imgflip.com/gif/1tg4db"><img src="https://i.imgflip.com/1tg4db.gif" title="made at imgflip.com"/></a>
 
 Demonstrates ability to recognize if moving a chess piece will result in King beeing in check at forbids any move like this:
+
 <a href="https://imgflip.com/gif/1tg4wp"><img src="https://i.imgflip.com/1tg4wp.gif" title="made at imgflip.com"/></a>
 
 Demonstrates ability to recognize if King is actively stepping into check and forbids that move:
+
 <a href="https://imgflip.com/gif/1tg51z"><img src="https://i.imgflip.com/1tg51z.gif" title="made at imgflip.com"/></a>
 
 # BEST MOVE SUGGESTIONS
