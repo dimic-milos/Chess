@@ -6,7 +6,7 @@ CHECK SITUATIONS
 Demonstrates ability to recognize if King is check. Paints corresponding fields in purple color:
 <a href="https://imgflip.com/gif/1teuh9"><img src="https://i.imgflip.com/1teuh9.gif" title="made at imgflip.com"/></a>
 
-Demonstrates ability to recognize if King is about to step into a field under enemy attack and prevents that move:
+Demonstrates ability to recognize if King is about to step into a field under enemy attack and prevents that move no matter if it removes immediate  treath to king, it puts the King in new check by another opponent piece:
 <a href="https://imgflip.com/gif/1tg39w"><img src="https://i.imgflip.com/1tg39w.gif" title="made at imgflip.com"/></a>
 
 Demonstrates ability to defend the King by eating the chess piece who's attacking the King:
