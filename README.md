@@ -1,7 +1,7 @@
 # Chess
 Chess game with all special chess moves implemented (promotion, en passant, castling) able to recognize if King is under Check or Checkmate. Game also offers "BEST MOVE" suggestions based on calculations of four or more moves ahead, depending on number of pieces on the board due to CPU processing limitation
 
-CHECK SITUATIONS
+# CHECK SITUATIONS
 
 Demonstrates ability to recognize if King is check. Paints corresponding fields in purple color:
 <a href="https://imgflip.com/gif/1teuh9"><img src="https://i.imgflip.com/1teuh9.gif" title="made at imgflip.com"/></a>
@@ -18,8 +18,7 @@ Demonstrates ability to recognize if moving a chess piece will result in King be
 Demonstrates ability to recognize if King is actively stepping into check and forbids that move:
 <a href="https://imgflip.com/gif/1tg51z"><img src="https://i.imgflip.com/1tg51z.gif" title="made at imgflip.com"/></a>
 
-BEST MOVE SUGGESTIONS
-
+# BEST MOVE SUGGESTIONS
 
 This Chess offers "best move" suggestion. In this situation it suggests the user to move the Black Queen to H4 as this is the shortes and most efficient way to put the most damage to the opponent:
 
@@ -29,13 +28,13 @@ In this situation we have two moves. Firstly "best move" doesn't offere direct s
 
 <a href="https://imgflip.com/gif/1tg5tf"><img src="https://i.imgflip.com/1tg5tf.gif" title="made at imgflip.com"/></a>
 
-PROMOTION
+# PROMOTION
 
 Demonstrates ability to offer a special chess move called promotion. A chess rule that requires a pawn that reaches its eighth rank to be immediately replaced by the player's choice of a queen, knight, rook, or bishop of the same color. The new piece replaces the pawn on the same square, as part of the same move:
 
 <a href="https://imgflip.com/gif/1tg5bc"><img src="https://i.imgflip.com/1tg5bc.gif" title="made at imgflip.com"/></a>
 
-CASTLING
+# CASTLING
 
 Demonstrates ability to offer a special chess move called castling. A move in the game of chess involving a player's king and either of the player's original rooks. This app checks the following prerequisites before allowing the move:
 
@@ -51,7 +50,7 @@ Castling is permissible if and only if all of the following conditions hold:
 <a href="https://imgflip.com/gif/1tg3ri"><img src="https://i.imgflip.com/1tg3ri.gif" title="made at imgflip.com"/></a>
 <a href="https://imgflip.com/gif/1tg42p"><img src="https://i.imgflip.com/1tg42p.gif" title="made at imgflip.com"/></a>
 
-EN PASSANT
+# EN PASSANT
 
 Demonstrates ability to offer a special chess move called En passant. It is a special pawn capture that can only occur immediately after a pawn moves two ranks forward from its starting square and an enemy pawn that could have captured it had it only moved forward only one square. This app checks the following prerequisites before allowing the move:
 
@@ -63,7 +62,7 @@ The conditions are:
 
 <a href="https://imgflip.com/gif/1tg4lz"><img src="https://i.imgflip.com/1tg4lz.gif" title="made at imgflip.com"/></a>
 
-PAWNS ONE OR TWO FIELDS
+# PAWNS ONE OR TWO FIELDS
 
 Demonstrates ability to check if Pawn has the right to advance one or two squares. Normally a pawn moves by advancing a single square, but the first time a pawn is moved, it has the option of advancing two squares.
 
