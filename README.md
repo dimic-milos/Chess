@@ -1,5 +1,5 @@
 # Chess
-Chess game with all special chess moves implemented (promotion, en passant, castling) able to recognize if King is under Check or Checkmate. Game also offers "BEST MOVE" suggestions based on calculations of four or more moves ahead, depending on number of pieces on the board. When user selects a chess piece squares available as valid destination turn green for a moment. If a possible square is populated by the enemy piece, it turns yellow to indicate possible catch.
+Chess game with all special chess moves implemented (promotion, en passant, castling) able to recognize if King is under Check or Checkmate. Game also offers "BEST MOVE" suggestions based on calculations of four or more moves ahead, depending on number of pieces on the board. When user selects a chess piece squares available as valid destination turn green for a moment. If a possible square is populated by the enemy piece, it turns yellow to indicate possible catch. King in check and it's capturer turn square color into purple.
 
 # CHECK SITUATIONS
 
