@@ -14,21 +14,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         // Svaki put kad se promeni orijentacija uredjaja ova funkcija poziva func rotated
-        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.rotated), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
         
         return true
     }
     
-    func rotated() {
-        if UIDeviceOrientationIsLandscape(UIDevice.current.orientation) {
+    @objc func rotated() {
+        if  UIDevice.current.orientation.isLandscape {
             print("JUST ROTATED to Landscape")
         }
         
-        if UIDeviceOrientationIsPortrait(UIDevice.current.orientation) {
+        if  UIDevice.current.orientation.isPortrait {
             print("JUST ROTATED to Portrait")
         }
         dummie?.UpdateScreenForNewArrangment()

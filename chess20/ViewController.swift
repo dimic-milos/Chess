@@ -314,10 +314,10 @@ class ViewController: UIViewController {
                 var casultiyX: CGFloat?
                 var casultiyY: CGFloat?
                
-                if UIDeviceOrientationIsPortrait(UIDevice.current.orientation){
+                if UIDevice.current.orientation.isPortrait {
                     casultiyX = (fields[numberOfCasulties].fieldPositionX)!
                     casultiyY = ((fields.first?.fieldPositionY)! * 10) + ((fields.first?.fieldSize)! * numberOfCasultiyRows)
-                } else if UIDeviceOrientationIsLandscape(UIDevice.current.orientation) {
+                } else if  UIDevice.current.orientation.isLandscape {
                     casultiyX = ((fields.first?.fieldPositionY)! * 10) + ((fields.first?.fieldSize)! * numberOfCasultiyRows)
                     casultiyY = (fields[numberOfCasulties].fieldPositionX)!
                 } else {
@@ -397,7 +397,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func UserPressedField(button: UIButton) {
+    @objc func UserPressedField(button: UIButton) {
         //print(" user press field \(button.tag)")
         // kaze sta se radi ako je user pritisne neko dugme na sah tabli
         if noFieldIluminated && FieldIsOccupied(fieldValue: button.tag) && isItMyTurn(fieldValue: button.tag) { // hendluje situaciju u kojoj ni jedno polje nije jos iluminated
@@ -1147,7 +1147,7 @@ class ViewController: UIViewController {
 
 
     
-    func ExecutePromotion(sender: UIButton) {
+    @objc func ExecutePromotion(sender: UIButton) {
         //print("execute promotion")
         let x: String
         let y: Int
@@ -1574,7 +1574,7 @@ class ViewController: UIViewController {
             
             repeat {
                 didThis += 1
-                for letter in situation.branchID.characters {
+                for letter in situation.branchID {
                     if letter == " " {
                         skippedSpace += 1
                     }
@@ -1625,7 +1625,7 @@ class ViewController: UIViewController {
             // ovde sad rasparcavam branchID, koji moze sadrzati samo jedan ali i vise koraka, tako da je svaki korak ponaosob i kao takvog ga apendujem u branchestoshow radi citljivijeg printa, jer se vidi sta je tacno bio i prvi i drugi i treci i .... korak
             repeat {
                 didThis += 1
-                for letter in situation.branchID.characters {
+                for letter in situation.branchID {
                     if letter == " " {
                         skippedSpace += 1
                     }
